@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: url(upload/bizhi2.jpg)no-repeat;
+				height: 700px;
+				
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.dl{
+				width: 25%;
+				height: 300px;
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				text-align: center;
+				border: 5px solid orange;
+			}
+			h2{
+				margin-top: 20px;
+				color: #FFA500;
+			}
+			#user{
+				margin-top: 20px;
+				width: 70%;
+				height: 35px;
+				border: 5px solid orange;
+			}
+			#pass{
+				margin-top: 20px;
+				width: 70%;
+				height: 35px;
+				border: 5px solid orange;
+			}
+			.an{
+				margin-top: 30px;
+				width: 70%;
+				height: 35px;
+				background-color: #FFA500;
+				font-size: 20px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="guanli.php" method="post" class="dl">
+			<h2>管理员登录</h2>
+			<input type="text" id="user" name="user" placeholder="账号" required="required" />
+			<input type="password" id="pass" name="pass" placeholder="密码" required="required" />
+			<input type="submit" value="登录" class="an" />
+		</form>
+	</body>
+</html>
